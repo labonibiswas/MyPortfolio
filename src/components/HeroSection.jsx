@@ -8,7 +8,7 @@ export const HeroSection = () => {
             <div className="hero-container">
                 <div className=" hero hero-grid">
                     <div className="photo">
-                        <img src="/dp.jpg" />
+                        <img src="/profile.jpg" alt="photo" />
                     </div>
                     <div className="text">
                         <div className="hello">
