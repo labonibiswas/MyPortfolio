@@ -1,0 +1,140 @@
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.footer-container {
+  border-top: 1px solid black;
+  height: auto;
+  width: 80rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.end-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.end-text h3{
+  text-align: center;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.app-logo {
+  color: black;
+}
+
+.app1 {
+  &:hover {
+    color: rgb(31, 96, 235);
+  }
+}
+
+.app2 {
+  &:hover {
+    color: red;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  footer {
+    padding: 0.5rem;
+  }
+  
+  .footer-container {
+    border-top: 1px solid black;
+    padding: 0.5rem;
+  }
+  
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  .end-text {
+    gap: 0rem;
+    font-size: 1rem;
+  }
+
+  .end-text h3{
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media (min-width: 426px) {
+  
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  
+}
+
+@media (min-width: 768px) {
+  .footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .end-text h3{
+    text-align: left;
+  }
+
+  
+}
+
+@media (min-width: 1024px) {
+  .footer-items{
+    gap: 15rem;
+  }
+}

@@ -1,0 +1,35 @@
+
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem;
+  }
+  
+  .pdf-frame {
+    border: none;
+    height: 28rem;
+    width: 80rem; 
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .pdf-container {
+      margin-top: 0;
+      padding: 1rem;
+    }
+    .pdf-frame {
+      border: none;
+      height: 23rem;
+      width: 80rem;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .pdf-frame {
+      border: none;
+      height: 40rem;
+      width: 80rem;
+    }
+  }
