@@ -11,11 +11,11 @@ export const Footer = () => {
                 <div className="footer-items">
                     <div className="end-text">
                         <h3>phone</h3>
-                        <p>+91-00011-10222</p>
+                        <p>+91-XXXX-XXXX</p>
                     </div>
                     <div className="end-text">
                         <h3>Email</h3>
-                        <p>labo@123gmail.com</p>
+                        <p>biswasl927@gmail.com</p>
                     </div>
                     <div className="end-text">
                         <h3>Follow Me</h3>

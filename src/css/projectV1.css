@@ -1,0 +1,143 @@
+.swiper-button-prev,
+.swiper-button-next{
+  color: #007bff;
+  opacity: 0.8;
+  transition: opacity 0.3 ease;
+  background: transparent !important;
+}
+
+.projects-container .swiper-button-prev{
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.projects-container .swiper-button-next{
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Increase hit area and visual size of arrows */
+.swiper-button-prev:after,
+.swiper-button-next:after{
+  font-size: 20px;
+  padding: 0;
+  /*background-color: none;*/
+  /*border-radius: 50%;
+  box-shadow: none;*/
+}
+
+.swiper-slide{
+  height: auto;
+  display: flex;
+  align-items: stretch;
+
+  -webkit-box-align: stretch !important;
+  -ms-flex-align: stretch !important;
+}
+
+.projects-container {
+  padding-top: 80px; 
+  padding-bottom: 50px; 
+  max-width: 80rem;
+  margin: 0 auto; 
+  position: relative;
+}
+
+
+.project-card {
+  background-color: #f7f7f7; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 30px; 
+  border-radius: 8px; 
+  text-align: center;
+  margin-bottom: 20px; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-wrapper{
+  height: 200px;
+  margin: -20 -20 20 -20;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.project-card h2{
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.project-card p{
+  /* Allow the description to grow/shrink, but reserve at least 3 lines */
+  flex-grow: 1;
+  padding: 10px 10px;
+  max-height: 100px; /* Optional: limit description height */
+  overflow: auto; /* Adds scrollbar if description is too long */
+  text-align: justify;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+
+
+.card-buttons{
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.card-buttons button{
+  padding: 10px 5px;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-btn{
+  background-color: #007bff;
+  color: white;
+
+}
+
+.github-btn{
+  background-color: #333;
+  color: white;
+}
+
+.swiper-pagination{
+  background: transparent !important;
+  padding: 0;
+  margin-top: 50px !important;
+  bottom: 0px !important;
+}
+
+
+/* Hide arrows on smaller screens where there's less space */
+@media (max-width: 768px){
+  .swiper-button-prev,
+  .swiper-button-next{
+    display: none;
+  }
+  .projects-container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
