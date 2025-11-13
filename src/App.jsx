@@ -14,7 +14,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<HeroSection />} />
-          <Route path="/resume" element={<Resume pdfUrl="LABONI_BISWAS_resume_without_phone_no.pdf" />} />
+          <Route path="/Resume" element={<Resume pdfUrl="/LABONI_BISWAS_resume_without_phone_no.pdf" />} />
           <Route path="/projects" element={<ProjectV1 />} />
         </Routes>
       </BrowserRouter>
